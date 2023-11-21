@@ -6,28 +6,20 @@
 // Scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
 
-// creazione variabile contenente contenitore 
-const contenitore= document.getElementById("contenitore");
-console.log(contenitore);
 
 // creazione 100 square con loop for 
 for (let i = 1; i <= 100; i++) {
     // console.log(i);
-    // creazione dei div con classe square
-    let square=document.createElement("div");
-    // console.log(square);
-    // aggiunta classe dentro css a square
-    square.classList.add("js-square");
-    // selezione square in base ai loro numeri
+    // selezione valore
+    let valore;
     if (i % 3 === 0 && i % 5 === 0) {
-        square.append("fizzbuzz")
+        valore="fizzbuzz"
     } else if (i % 5 === 0) {
-        square.append("buzz")
+        valore="buzz"
     } else if (i % 3 === 0) {
-        square.append("fizz")
+        valore="fizz"
     } else{
-        square.append(i);
+        valore=i;
     }
-    // inserimento di suqare dentro container html
-    contenitore.append(square);
+    console.log(valore);
 }
