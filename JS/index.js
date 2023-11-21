@@ -7,7 +7,6 @@
 // Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
 
 // creazione variabile contenente contenitore 
-
 const contenitore= document.getElementById("container");
 console.log(contenitore);
 
@@ -17,8 +16,8 @@ for (let i = 1; i <= 100; i++) {
     // creazione dei div con classe square
     let square=document.createElement("div")
     // console.log(square);
-    square.classList.add("square");
-    contenitore.append(square);
+    // selezione square in base ai loro numeri
+    square.classList.add("js-square");
     if (i % 3 === 0 && i % 5 === 0) {
         square.innerHTML="fizzbuzz"
     } else if (i % 5 === 0) {
@@ -28,4 +27,6 @@ for (let i = 1; i <= 100; i++) {
     } else{
         square.append(i);
     }
+    // inserimento di suqare dentro container html
+    contenitore.append(square);
 }

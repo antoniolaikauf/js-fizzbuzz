@@ -1,14 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* caratteristiche container */
 #container{
     display: flex;
     flex-wrap: wrap;
 }
-
-.square{
+/* caratteristiche classe js */
+.js-square{
     width: calc(100% / 7 - 10px);
     margin: 5px;
     height: 50px;
     text-align: center;
     line-height: 50px;
-    /* debug */
-    background-color: red;
+    border: 1px solid black;
 }
