@@ -31,6 +31,18 @@ for (let i = 1; i <= 100; i++) {
     } else{
         square.append(i);
     }
-    // inserimento di suqare dentro container html
+    // inserimento di square dentro container html
     contenitore.append(square);
+    square.addEventListener("click", function(){
+        if (i % 3 === 0 && i % 5 === 0) {
+           valoreAttuale.append("fizzbuzz")
+        } else if (i % 5 === 0) {
+            valoreAttuale.append("buzz")
+        } else if (i % 3 === 0) {
+            valoreAttuale.append("fizz")
+        } else{
+            valoreAttuale.append(i);
+        }
+    })
 }
+
