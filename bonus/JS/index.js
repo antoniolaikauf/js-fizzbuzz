@@ -35,17 +35,20 @@ for (let i = 1; i <= 100; i++) {
     contenitore.append(square);
     // valore mostrato all'evento click
     square.addEventListener("click", function(){
-        let valoreAttuale;
+        let risultato;
         if (i % 3 === 0 && i % 5 === 0) {
-         valoreAttuale="fizzbuzz"
+            risultato= "fizzbuzz"
         } else if (i % 5 === 0) {
-            valoreAttuale="buzz"
+            risultato= "buzz"
         } else if (i % 3 === 0) {
-            valoreAttuale="fizz"
+            risultato="fizz"
         } else{
-            valoreAttuale=i;
+            risultato= i;
         }
-        document.getElementById("testo").innerHTML=valoreAttuale;
+        // creazione del div
+        let output ="<div>" + risultato + "</div>"
+        document.getElementById("testo").innerHTML=output;
     })
 }
+
 
