@@ -7,7 +7,7 @@
 // Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
 
 // creazione variabile contenente contenitore 
-const contenitore= document.getElementById("container");
+const contenitore= document.getElementById("contenitore");
 console.log(contenitore);
 
 // creazione 100 square con loop for 

@@ -2,7 +2,7 @@
     background-color: #5594ab;
 }
 /* caratteristiche container */
-#container{
+#contenitore{
     display: flex;
     flex-wrap: wrap;
 }
