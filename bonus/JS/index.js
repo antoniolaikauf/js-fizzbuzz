@@ -35,20 +35,24 @@ for (let i = 1; i <= 100; i++) {
     contenitore.append(square);
     // valore mostrato all'evento click
     square.addEventListener("click", function(){
+        let contenitoreRisultato = document.createElement("div")
         let risultato;
         if (i % 3 === 0 && i % 5 === 0) {
-            risultato= "fizzbuzz"
+            risultato= "fizzbuzz";
         } else if (i % 5 === 0) {
-            risultato= "buzz"
+            risultato= "buzz";
         } else if (i % 3 === 0) {
-            risultato="fizz"
+            risultato="fizz";
         } else{
             risultato= i;
         }
-        // creazione del div
-        let output ="<div>" + risultato + "</div>"
-        document.getElementById("testo").innerHTML=output;
+        contenitoreRisultato.append(risultato)
+        // console.log(contenitoreRisultato);
+        document.getElementById("testo").append(contenitoreRisultato)
     })
 }
+
+
+
 
 
