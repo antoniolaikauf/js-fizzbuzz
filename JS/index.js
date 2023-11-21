@@ -14,10 +14,11 @@ console.log(contenitore);
 for (let i = 1; i <= 100; i++) {
     // console.log(i);
     // creazione dei div con classe square
-    let square=document.createElement("div")
+    let square=document.createElement("div");
     // console.log(square);
-    // selezione square in base ai loro numeri
+    // aggiunta classe dentro css a square
     square.classList.add("js-square");
+    // selezione square in base ai loro numeri
     if (i % 3 === 0 && i % 5 === 0) {
         square.append("fizzbuzz")
     } else if (i % 5 === 0) {

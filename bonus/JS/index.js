@@ -9,16 +9,16 @@
 // creazione variabile contenente contenitore 
 const contenitore= document.getElementById("contenitore");
 // console.log(contenitore);
-const valoreAttuale= document.getElementById("valore-attuale");
 
 // creazione 100 square con loop for 
 for (let i = 1; i <= 100; i++) {
     // console.log(i);
     // creazione dei div con classe square
-    let square=document.createElement("div")
+    let square=document.createElement("div");
     // console.log(square);
-    // selezione square in base ai loro numeri
+    // aggiunta classe dentro css a square
     square.classList.add("js-square");
+    // selezione square in base ai loro numeri
     if (i % 3 === 0 && i % 5 === 0) {
         square.append("fizzbuzz")
         square.classList.add("js-squarefizzbuzz")
@@ -33,7 +33,9 @@ for (let i = 1; i <= 100; i++) {
     }
     // inserimento di square dentro container html
     contenitore.append(square);
+    // valore mostrato all'evento click
     square.addEventListener("click", function(){
+        let valoreAttuale=document.createElement("div")
         if (i % 3 === 0 && i % 5 === 0) {
            valoreAttuale.append("fizzbuzz")
         } else if (i % 5 === 0) {
@@ -43,6 +45,7 @@ for (let i = 1; i <= 100; i++) {
         } else{
             valoreAttuale.append(i);
         }
+        document.getElementById("bg-color").append(valoreAttuale)
     })
 }
 
