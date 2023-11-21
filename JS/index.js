@@ -5,3 +5,19 @@
 // Consigli del giorno:
 // Scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
+
+// creazione variabile contenente contenitore 
+
+const contenitore= document.getElementById("container");
+console.log(contenitore);
+
+// creazione 100 square con loop for 
+for (let i = 1; i <= 100; i++) {
+    // console.log(i);
+    // creazione dei div con classe square
+    let square=document.createElement("div")
+    // console.log(square);
+    square.classList.add("square");
+    square.append(i);
+    contenitore.append(square);
+}
