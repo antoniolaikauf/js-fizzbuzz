@@ -19,11 +19,11 @@ for (let i = 1; i <= 100; i++) {
     // selezione square in base ai loro numeri
     square.classList.add("js-square");
     if (i % 3 === 0 && i % 5 === 0) {
-        square.innerHTML="fizzbuzz"
+        square.append("fizzbuzz")
     } else if (i % 5 === 0) {
-        square.innerHTML="buzz"
+        square.append("buzz")
     } else if (i % 3 === 0) {
-        square.innerHTML="fizz"
+        square.append("fizz")
     } else{
         square.append(i);
     }

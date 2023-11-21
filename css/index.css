@@ -1,7 +1,5 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+#bg-color{
+    background-color: #5594ab;
 }
 /* caratteristiche container */
 #container{
@@ -16,4 +14,9 @@
     text-align: center;
     line-height: 50px;
     border: 1px solid black;
+}
+
+h1{
+    text-align: center;
+    color: white;
 }
