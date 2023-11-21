@@ -18,6 +18,14 @@ for (let i = 1; i <= 100; i++) {
     let square=document.createElement("div")
     // console.log(square);
     square.classList.add("square");
-    square.append(i);
     contenitore.append(square);
+    if (i % 3 === 0 && i % 5 === 0) {
+        square.innerHTML="fizzbuzz"
+    } else if (i % 5 === 0) {
+        square.innerHTML="buzz"
+    } else if (i % 3 === 0) {
+        square.innerHTML="fizz"
+    } else{
+        square.append(i);
+    }
 }
