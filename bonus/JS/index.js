@@ -35,17 +35,17 @@ for (let i = 1; i <= 100; i++) {
     contenitore.append(square);
     // valore mostrato all'evento click
     square.addEventListener("click", function(){
-        let valoreAttuale=document.createElement("div")
+        let valoreAttuale;
         if (i % 3 === 0 && i % 5 === 0) {
-           valoreAttuale.append("fizzbuzz")
+         valoreAttuale="fizzbuzz"
         } else if (i % 5 === 0) {
-            valoreAttuale.append("buzz")
+            valoreAttuale="buzz"
         } else if (i % 3 === 0) {
-            valoreAttuale.append("fizz")
+            valoreAttuale="fizz"
         } else{
-            valoreAttuale.append(i);
+            valoreAttuale=i;
         }
-        document.getElementById("bg-color").append(valoreAttuale)
+        document.getElementById("testo").innerHTML=valoreAttuale;
     })
 }
 
