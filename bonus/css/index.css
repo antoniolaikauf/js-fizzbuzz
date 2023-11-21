@@ -14,6 +14,19 @@
     text-align: center;
     line-height: 70px;
     border: 1px solid black;
+    background-color: #1389b2;
+}
+
+.js-squarefizz{
+    background-color: #0cd6a1;
+}
+
+.js-squarebuzz{
+    background-color: #ffd166;
+}
+
+.js-squarefizzbuzz{
+    background-color: #f0466f;
 }
 
 h1{

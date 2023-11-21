@@ -20,10 +20,13 @@ for (let i = 1; i <= 100; i++) {
     square.classList.add("js-square");
     if (i % 3 === 0 && i % 5 === 0) {
         square.append("fizzbuzz")
+        square.classList.add("js-squarefizzbuzz")
     } else if (i % 5 === 0) {
         square.append("buzz")
+        square.classList.add("js-squarebuzz")
     } else if (i % 3 === 0) {
         square.append("fizz")
+        square.classList.add("js-squarefizz")
     } else{
         square.append(i);
     }
